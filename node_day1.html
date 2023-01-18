@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Node Day-1</title>
+    <style>
+        h1{
+            text-align: center;
+            color:aqua;
+
+        }body{
+            background-color: black;
+            color:whitesmoke;
+        }h2{
+            color:yellowgreen
+        }p{
+            font-size: 17px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Interview Preparation (Day-1)</h1>
+    <hr>
+    <h2>Q1. What is node.js ?</h2>
+    <p>Node.js is an open source ,cross-platform , javascript runtime environment built on v8 engine. <br>
+        <ol>
+            <li>It is asynchronous in nature means when it receive another request it resolves it and make it available for another request.</li>
+            <li>It is event-driven and single-threaded which means server conatins a single thread i.e processed one after another.</li>
+            <li>It has non-blocking properties like it does not block the execution process.</li>
+        </ol>
+    </p>
+
+    <h2>Q2. What is NPM ?</h2>
+    <p>NPM stands for the node package manager which is used for node dependency management. 
+        NPM gets installed with NodeJs installation.
+        NPM uses nested dependencies, so we can use different versions of any module in our code. <br>
+        <strong>Note</strong> : NPM uses Nested dependencies mean that any dependency is again dependent on another dependency
+    </p>
+  
+    <h2>Q3. What are the modules in node.js ?</h2>
+    <p>        
+        1. Core Modules/Internal modules : Node.js has many built-in modules that are part of the platform and comes with Node.js installation. These modules can be loaded into the program by using the require function. <br>
+        2. Local Modules/Custom Modules : Local modules are created locally in your Node.js application, Means a modules that calculates various operations. <br>
+        3. Third-Party Modules : Third-party modules are modules that are available online using the Node Package Manager(NPM).These modules can be installed in the project folder or globally.
+    </p>
+
+    <h2>Q4. What is the purpose of module.exports ?</h2>
+    <p>
+        Module.exports is the instruction that tells Node. js which bits of code (functions, objects, strings, etc.) to “export” from a given file so other files are allowed to access the exported code.
+        <br>
+        By module.exports, we can export functions, objects, and their references from one file and can use them in other files by importing them by require() method.
+    </p>
+   
+    <h2>Q5. Difference between default export and named export ?</h2>
+    <p>
+        Named Exports: <br>
+        Named exports are useful to export several values.
+        Named exports allow us to share multiple objects, functions or variables from a single file
+        Named exports are imported with curly braces in various files and must be imported using the name of the object, function or variable that was exported.
+        During the import, it is mandatory to use the same name of the corresponding object. <br>
+        Default exports <br>
+        Default exports are useful to export only a single object, function, variable.
+        During the import, we can use any name to import.
+        
+    </p>
+
+    <h2>Q6. How do you import any module in node.js ?</h2>
+    <p>In node.js we need to import module to use their functionality. To import the node module we need to use the require() method and assigning the return value to a variable and invoking the functions through dot(.) . <br>
+        Example : <pre> cosnt mods = require('../')</pre>
+    </p>
+
+</body>
+</html>
